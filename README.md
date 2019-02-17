@@ -52,4 +52,58 @@ true || false # true
 do_something() and do_something_else()
 so_something() or log_error()
 
+# arrays
+# this is an array
+array = [1,2,3,4,5] # [1,2,3,4,5]
+
+# arrays can contain diff types of items 
+[1, 'hello', false] 
+
+# arrays can be indexed
+# from the front...
+array[0] # 1
+array.first # 1 
+araay[12] # nil
+
+# ... or from the back
+array[-1] # 5 
+array.last # 5
+
+# ...or with a start index and length
+array[2,3] # [3,4,5]
+# ...or with a range
+array[1..3] # [2,3,4]
+
+# you can reverse an array
+# return a new array with the reversed values
+[1,2,3].reverse # [3,2,1]
+a = [1,2,3]
+a.reverse! # [3,2,1] # a === [3,2,1] because of the bang (!) call to reverse
+
+# like arithmetic, [var] access is just syntactic sugar
+# for calling method '[]' on an object
+array.[] 0 # nil
+array.[] 12 # nil
+
+# you can add to an array...
+array << 6 # [1,2,3,4,5,6]
+array.push(6)
+
+# check if an item exists in an array
+array.includes?(1) # true
+
+# hashes are ruby's primary dic with key/value pairs
+# hasehs are denoted with curly braces. 
+hash = { 'color' => 'green', 'number' => 5 }
+
+hash.keys ['color', 'number']
+
+# hashes can be quickly looked up by key
+hash['color'] # "green"
+hash['number'] # 5
+
+# asking a has for a key that doesn't exist returns nil
+hash['nothing here'] # nil 
+
+
 ```
