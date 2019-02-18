@@ -102,8 +102,15 @@ hash.keys ['color', 'number']
 hash['color'] # "green"
 hash['number'] # 5
 
-# asking a has for a key that doesn't exist returns nil
+# asking a hash for a key that doesn't exist returns nil
 hash['nothing here'] # nil 
+
+# user input using gets.chomp
+# gets -> gets a line of text and returns as a value to 
+# your porogram, this value includes the trailing line 
+# break, if you then call chomp on that value this line break is cut off
+
+
 
 
 ```
