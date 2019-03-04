@@ -111,6 +111,22 @@ hash['nothing here'] # nil
 # break, if you then call chomp on that value this line break is cut off
 
 
+# What is a file?
+# A file is an abstraction of any file object accesible by the program and is
+# closely associated with the class IO. File includes the methods of modules FileTest
+# as class methods, allowing you to write File.exists?("foo")
 
+# Seek implementation from IO
+# ios.seek(amount, whence=IO::SEEK_SET) -> 0
+# Seeks to a given offset in the stream accoding to the value of whence
+# Ex.
+f = File.new("testfile")
+f.seek(-13, IO::SEEK_END) # => 0
+f.readLine # => "And so on...\n"
 
+# Class - Range
+# A range represents an interval-a set of values with a beginning and a end. Ranges may be
+# Constructed using the s..e and s...e literals
+(1..5).to_a # created an array with 1,2,3,4,5
+(1...5).to_a # creates an array with 1,2,3,4
 ```
