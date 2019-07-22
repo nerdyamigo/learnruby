@@ -25,4 +25,36 @@ a = "hello "
 a << "world" #=> "hello world"
 a.concat(33) #=> "hello world!"
 
+# string <=> other_string -> -1, 0, 1 or nil 
+# comparison - returns -1, 0, 1 or nil depending on wether the string is less than, equal to or greater than other_string
+# nil is returned if the values are incomparable
+"abcdef" <=> "acde"     #=> 1
+"abcdef" <=> "abcdef"   #=> 0
+"abcdef" <=> "abcdefg"  #=> -1
+"abcdef" <=> "ABCDEF"   #=> 1
+
+# str =~ obj -> fixnum or nil
+# match - if obj is a regex, use it as a pattern to match against str, and returns the position the match starts, or nil if there is no match. Otherwise, invokes obj
+
+# str[index] -> new_str or nil
+# str[start, length] -> new_str or nil
+# str[range] -> new_str or nil
+# str[regexp] -> new_str or nil
+# str[regexp, capture] -> new_str or nil
+# str[match_str] -> new_str or nil
+
+a = "hello there"
+
+a[1]        #=> "e"
+a[2,3]      #=> "llo"
+a[2..3]     #=> "ll"
+a[-3,2]     #=> "er"
+a[7..-2]    #=> "her"
+a[-4..-3]   #=> "her"
+a[-2..-4]   #=> ""
+
+a[11,0]     #=> ""
+a[11]       #=> nil
+a[12..-1]   #=> nil
+
 ```
