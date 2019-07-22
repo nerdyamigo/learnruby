@@ -1,7 +1,7 @@
 filename = ARGV.first
 
 puts "We are going to erase #{filename}"
-puts "If you do not want that git CTR-C (^C)."
+puts "If you do not want that hit CTR-C (^C)."
 puts "If you do want that, hit RETURN"
 
 $stdin.gets
@@ -31,4 +31,5 @@ target.write(line3)
 target.write("\n")
 
 puts "And finally, we close it"
+# always close files
 target.close

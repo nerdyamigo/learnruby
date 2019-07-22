@@ -50,7 +50,7 @@ true && false # false
 true || false # true
 
 do_something() and do_something_else()
-so_something() or log_error()
+do_something() or log_error()
 
 # arrays
 # this is an array

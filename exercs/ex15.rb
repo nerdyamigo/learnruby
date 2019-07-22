@@ -1,4 +1,5 @@
 # grab the firstr argument passed down from the CLI
+# the first arg would be the name of the file you want to open
 filename = ARGV.first
 
 # open the file - similar to C
